@@ -44,7 +44,12 @@ def object_detection(path, filename):
     cv2.rectangle(image, pt1, pt2, (0, 255, 0), 30)
     # conver into bgr
     image_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-    cv2.imwrite("D:\UTY\Semester 7\Pengembangan Aplikasi AI\Pengenal-Citra-Nomor-Kendaraan\WebApp\static\predict{}".format(filename), image_bgr)
+    cv2.imwrite(
+        "D:/UTY/Semester 7/Pengembangan Aplikasi AI/Pengenal-Citra-Nomor-Kendaraan/WebApp/static/predict/{}".format(
+            filename
+        ),
+        image_bgr,
+    )
     return coords
 
 
@@ -66,7 +71,12 @@ def OCR(path, filename):
     # Region of Interest
     roi = img[ymin:ymax, xmin:xmax]
     roi_bgr = cv2.cvtColor(roi, cv2.COLOR_RGB2BGR)
-    cv2.imwrite("D:\UTY\Semester 7\Pengembangan Aplikasi AI\Pengenal-Citra-Nomor-Kendaraan\WebApp\static\roi{}".format(filename), roi_bgr)
+    cv2.imwrite(
+        "D:/UTY/Semester 7/Pengembangan Aplikasi AI/Pengenal-Citra-Nomor-Kendaraan/WebApp/static/roi/{}".format(
+            filename
+        ),
+        roi_bgr,
+    )
     # extract text from image
     text = pt.image_to_string(roi)
     print("Plat Nomor:", text)
