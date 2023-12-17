@@ -5,7 +5,10 @@ import os
 app = Flask(__name__)
 
 BASE_PATH = os.getcwd()
-UPLOAD_PATH = os.path.join(BASE_PATH, "/static/upload/")
+UPLOAD_PATH = os.path.join(
+    BASE_PATH,
+    "D:/UTY/Semester 7/Pengembangan Aplikasi AI/Pengenal-Citra-Nomor-Kendaraan/WebApp/static/upload",
+)
 
 
 @app.route("/", methods=["POST", "GET"])
