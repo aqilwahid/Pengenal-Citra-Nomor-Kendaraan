@@ -1,8 +1,14 @@
 {% extends 'layout.html' %}
 
 {% block body %}
- <div class="container">
-    <h1>your are in index.html</h1>
+    <div class="container">
+        <br><br>
+        <from action="#" method="POST" enctype="multipart/form-data">
+            <div class="input-group">
+                <input type="file" class="form-control" name="image_name" required>
+                <input type="submit" value="Upload" class="btn btn-primary">
+            </div>
+        </from>
 
- </div>
+    </div>
 {% endblock %}
