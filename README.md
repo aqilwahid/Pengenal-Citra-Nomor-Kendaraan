@@ -11,5 +11,5 @@ Kemudian setelah dilabeli pada gambar akan dilakukan preprocessing data, membang
 
 Setelah selesai dengan model Deteksi Objek, kemudian dengan menggunakan model ini kita akan memotong gambar yang berisi pelat nomor yang juga disebut Region of Interest (ROI), dan meneruskan ROI ke API Pengenalan Optical Character of the Tesseract dengan Python (Pytesseract). Dalam model ini,akan menggabungkan semuanya dan membangun model Pipeline CNN.
 
-Pada modul terakhir, kita akan belajar membuat proyek aplikasi web menggunakan FLASK Python.
+Pada modul terakhir, akan dibuat proyek aplikasi web menggunakan FLASK Python.
 Arsitektur website menggunakan HTML, Bootstrap. Dan Aplikasi telah siap.
