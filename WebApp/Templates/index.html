@@ -13,8 +13,8 @@
     
 {% if  upload %}
     <div class='container'>
-        <table>
-            <tr>
+        <table style="border: solid black; width: 100%">
+            <tr style="border: solid black;">
                 <td>
                     <img class="rounded float-left img-fluid" src="/static/upload/{{ upload_image }}" alt="">
                 </td>
@@ -35,6 +35,16 @@
                 </td>
                 <td style="background-color: greenyellow;">
                     <h1 class="display-8">{{ text }}</h1>
+                </td>
+            </tr>
+        </table>
+        <table style="border: solid black; width: 100%">
+            <tr style="border: solid black;">
+                <th>Hyperparameter</th>
+            </tr>
+            <tr style="border: solid black;">
+                <td>
+                    <img class="img-fluid" src="/static/hyperparameter/epoch_loss.jpg" alt="">
                 </td>
             </tr>
         </table>
